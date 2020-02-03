@@ -1,0 +1,5 @@
+<SIS Version="1.0">
+<Image>
+<URL>//<!--#echo var="SERVER_NAME" -->:<!--#echo var="SERVER_PORT" --><!--#echo var="DOCUMENT_URI" -->/..</URL>
+</Image>
+</SIS>
