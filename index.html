@@ -28,11 +28,11 @@
         zoom: 2
       });
 
-      var slide_url_format = "./A7/PreviewSlide.jpg";
-
-      var layer = L.tileLayer(slide_url_format, {
-        minZoom: 2,
-        maxZoom: 10
+      var layer = L.tileLayer("./slide/{z}/{y}/{x}.jpg", {
+        minZoom: 3,
+        maxZoom: 8,
+        continousWorld: false,
+        noWrap: true
       }).addTo(map);
     });
   </script>
