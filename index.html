@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>NYU School of Medicine Virtual Microscope</title>
+  <title>Microscopy Project</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <link
@@ -28,7 +28,7 @@
         zoom: 2
       });
 
-      var layer = L.tileLayer("./slide/{z}/{y}/{x}.jpg", {
+      var layer = L.tileLayer("./slides/B45/{z}/{y}/{x}.jpg", {
         minZoom: 3,
         maxZoom: 8,
         continousWorld: false,
@@ -53,4 +53,8 @@
     class="sidebar-map"
     style="background-color:black;width:100%;height:100%;"
   ></div>
+  <!-- <div class="container">
+
+
+  </div> -->
 </body>
