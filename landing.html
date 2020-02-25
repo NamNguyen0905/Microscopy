@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+    <head> 
+    <title>Microscopy Viewer</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <p class="welcomeMessage">Welcome to the Microscopy Viewer: <span id="userWelcome"></span></p>
+        <p class="gameResults">Select the image to navigate to the viewer.</p>
+        
+        <!--The layout of the images on the page, look at CSS for styling. (4 per page)-->
+        <div class="row">
+            <div class="column">
+                <figure>
+                <a target="_blank" href="B45.html"><img src="slides/B45/0/0/0.jpg" alt="B45 image"><figurecaption>B45</figurecaption></a>
+                </figure>
+            </div>
+
+            <div class="column">
+                <figure>
+                <a target="_blank" href="A7.html"><img src="slides/A7/0/0/0.jpg" alt="A7 image"><figurecaption>A7</figurecaption></a> 
+                </figure>
+            </div>
+        </div> <!--end row div-->
+    </body>
+    <script src="script.js"></script>
+</html>

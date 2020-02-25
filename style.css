@@ -1,0 +1,59 @@
+body {
+    background-color: whitesmoke; 
+}
+
+.welcomeMessage {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    margin: 20px, 0, 0;
+    padding: 10px;
+    font-size: 30px;
+    color: navy;
+    font-weight: 600;
+}
+
+#userWelcome  {
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.gameResults {
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+    margin: 20px, 0, 0;
+    padding: 10px;
+    color: navy;
+}
+
+/*The design of each image*/
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
+  
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*Ensure that the images aligned in a row/column fashion and are spread across the page */
+/*TODO: add responsiveness*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    text-align: justify;
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*the image is a HTML5 figure with the caption of it aligned at its center*/
+figure {
+    text-align: center;
+}
