@@ -15,27 +15,19 @@
     crossorigin="anonymous"
   ></script>
 
+  <!-- Leaflet -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
   />
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      var map = L.map("map", {
-        center: [0, 0],
-        zoom: 2
-      });
+  <!-- Leaflet Plugins -->
+  <link rel="stylesheet" href="../dist/Control.MiniMap.min.css" />
+  <script src="../dist/Control.MiniMap.min.js" type="text/javascript"></script>
 
-      var layer = L.tileLayer("./slides/A7/{z}/{y}/{x}.jpg", { //the image directory is here
-        minZoom: 3,
-        maxZoom: 8,
-        continousWorld: false,
-        noWrap: true
-      }).addTo(map);
-    });
-  </script>
+  <!-- External script -->
+  <script src="script.js" onload="getSlide(A7)"></script>
 
   <style>
     body {
