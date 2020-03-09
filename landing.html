@@ -1,69 +1,99 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html lang="en">
-
-    <head> 
+  <head>
     <title>Microscopy Viewer</title>
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
 
-    <body>
-        <p class="welcomeMessage">Welcome to the Microscopy Viewer: <span id="userWelcome"></span></p>
-        <p class="gameResults">Select the image to navigate to the viewer.</p>
-        
-        <!--The layout of the images on the page, look at CSS for styling. (4 per page)-->
-        <div class="row">
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B45.html"><img src="slides/B45/0/0/0.jpg" alt="B45 image"><figurecaption>B45</figurecaption></a>
-                </figure>
-            </div>
+  <body>
+    <p class="welcomeMessage">
+      Welcome to the Microscopy Viewer <span id="userWelcome"></span>
+    </p>
+    <p class="gameResults">Select the image to navigate to the viewer.</p>
 
-            <div class="column">
-                <figure>
-                <a target="_blank" href="A7.html"><img src="slides/A7/0/0/0.jpg" alt="A7 image"><figurecaption>A7</figurecaption></a> 
-                </figure>
-            </div>
-            
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B72.html"><img src="slides/B72/0/0/0.jpg" alt="B72 image"><figurecaption>B72</figurecaption></a> 
-                </figure>
-            </div>
-            
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B79.html"><img src="slides/B79/0/0/0.jpg" alt="B79 image"><figurecaption>B79</figurecaption></a> 
-                </figure>
-            </div>
-        </div> <!--end row div-->
-        
-        <div class="row">
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B80.html"><img src="slides/B80/0/0/0.jpg" alt="B80 image"><figurecaption>B80</figurecaption></a> 
-                </figure>
-            </div>
-            
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B81.html"><img src="slides/B81/0/0/0.jpg" alt="B81 image"><figurecaption>B81</figurecaption></a> 
-                </figure>
-            </div>  
-            
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B47.html"><img src="slides/B47/0/0/0.jpg" alt="B47 image"><figurecaption>B47</figurecaption></a> 
-                </figure>
-            </div>
-            
-            <div class="column">
-                <figure>
-                <a target="_blank" href="B48.html"><img src="slides/B48/0/0/0.jpg" alt="B48 image"><figurecaption>B48</figurecaption></a> 
-                </figure>
-            </div>
-        </div>
-    </body>
-    <script src="script.js"></script>
+    <!--The layout of the images on the page, look at CSS for styling. (4 per page)-->
+    <div class="row">
+      <div class="column">
+        <figure>
+          <a target="_blank" href="Viewer/viewer.html">
+            <img id="A11" src="slides/A11/0/0/0.jpg" alt="A11 image" />
+            <figcaption>A11</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+          <a target="_blank" href="Viewer/viewer.html">
+            <img id="A7" src="slides/A7/0/0/0.jpg" alt="A7" />
+            <figcaption>A7</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+          <a id="B72" target="_blank" href="Viewer/viewer.html">
+            <img src="slides/B72/0/0/0.jpg" alt="B72 image" />
+            <figcaption>B72</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+          <a target="_blank" href="B79.html">
+            <img src="slides/B79/0/0/0.jpg" alt="B79 image" />
+            <figcaption>B79</figcaption>
+          </a>
+        </figure>
+      </div>
+    </div>
+    <!--end row div-->
+
+    <div class="row">
+      <div class="column">
+        <figure>
+          <a target="_blank" href="B80.html">
+            <img src="slides/B80/0/0/0.jpg" alt="B80 image" />
+            <figcaption>B80</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+          <a target="_blank" href="B81.html">
+            <img src="slides/B81/0/0/0.jpg" alt="B81 image" />
+            <figcaption>B81</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+          <a target="_blank" href="B47.html">
+            <img src="slides/B47/0/0/0.jpg" alt="B47 image" />
+            <figcaption>B47</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <div class="column">
+        <figure>
+          <a target="_blank" href="B48.html">
+            <img src="slides/B48/0/0/0.jpg" alt="B48 image" />
+            <figurecaption>B48</figurecaption>
+          </a>
+        </figure>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
