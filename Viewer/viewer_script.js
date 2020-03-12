@@ -3,14 +3,14 @@ $(document).ready(function() {
   console.log(page);
 
   //Get URL to given slide
-  let slide = "../slides/" + page + "/{z}/{y}/{x}.jpg";
+  let slide = "./A22/{z}/{y}/{x}.jpg";
   let map = L.map("map", {
     center: [0, 0],
-    zoom: 3
+    zoom: 2
   });
 
   let layer = new L.tileLayer(slide, {
-    minZoom: 3,
+    minZoom: 2,
     maxZoom: 8,
     continousWorld: false,
     noWrap: true
@@ -18,7 +18,7 @@ $(document).ready(function() {
   map.addLayer(layer);
 
   //Disable draggin on minZoom
-  map.dragging.disable();
+  //map.dragging.disable();
 
   //Mini Map
   let layer2 = new L.TileLayer(slide, {
@@ -62,4 +62,19 @@ $(document).ready(function() {
       map.dragging.disable();
     }
   });
+
+  L.Control.Scale.include({
+    _updateMetric: function(maxMeters) {
+      console.log(maxMeters);
+      var maxMicrons = maxMeters / 2000,
+          microns = this._getRoundNum(maxMicrons),
+          label = microns < 2000 ? microns + " um" : microns / 2000 + "mm";
+      
+      console.log(this._mScale, label, microns / maxMicrons);
+
+      this._updateScale(this._mScale, label, microns / maxMicrons);
+    }
+  });
+
+  L.control.scale({metric: true, imperial: false}).addTo(map);
 });
